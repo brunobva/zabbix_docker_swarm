@@ -12,7 +12,7 @@ services:
   zabbix-server:
     image: zabbix/zabbix-server-mysql:centos-5.0-latest
     env_file: 
-      - ./envs/zabbix-server/common.env
+      - ./env/zabbix-server/common.env
     networks:
       - "monitoring-network"
     volumes:
